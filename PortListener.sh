@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear
+
 # Prompt the user to enter the IP address of the server
 read -p "Enter the IP address of the server: " IP
 
