@@ -50,15 +50,19 @@ Now Enter The Following Text, Save And Close The File.
 `sudo nano /etc/rc.local`
 
 Paste In The Following, Save And Close The File.
+
 `#!/bin/bash`
 
 ### Give Permission And Enabled
 `sudo chmod +x /etc/rc.local`
+
 Enable the service on boot
 
 `sudo systemctl enable rc-local`
 `sudo systemctl status rc-local`
 
 ```
+
 ## License
+
 [License](https://github.com/AshkanWatson/PortListener/blob/main/LICENSE)
