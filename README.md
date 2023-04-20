@@ -1,5 +1,5 @@
 # Port Listener
- This Script Check Port Of Connection And If Connection Lost It Can Be Automaticly Reboot Server
+ This Script Is Listener Of Port And If Connection Lost It Can Be Automatically Reboot Server
 ## Installation
 ```
 # Clone The Repository
@@ -14,12 +14,11 @@ chmod +x PortListener.sh
 # Run The Script
 ./PortListener.sh
 ```
+You Can Put This Script On Startup App To Run After Reboot Too For Do This Check [Setup Section](https://github.com/AshkanWatson/PortListener#setup)
 ## Setup
 To Make The Script Run Automatically After A Reboot, You Can Follow Steps:
 Adding The Line:
-
 `/path/to/ListenerPort.sh &`
-
 to the **`/etc/rc.local`** File
 ## License
 [License](https://github.com/AshkanWatson/PortListener/blob/main/LICENSE)
