@@ -15,9 +15,11 @@ chmod +x PortListener.sh
 ./PortListener.sh
 ```
 ## Setup
-To Make The Script Run Automatically After A Reboot, You Can Follow Steps: 
+To Make The Script Run Automatically After A Reboot, You Can Follow Steps:
 Adding The Line:
+
 `/path/to/ListenerPort.sh &`
-to the **`/etc/rc.local file`**
-## license
+
+to the **`/etc/rc.local`** File
+## License
 [License](https://github.com/AshkanWatson/PortListener/blob/main/LICENSE)
