@@ -21,14 +21,16 @@ Adding The Line:
 `/path/to/PortListener.sh &`
 to the **`/etc/rc.local`** File
 
-And If You Don't Have *rc.loacl* File In Your */etc* Follow These Steps:
-```
-# For Enable Automatically
-Enable rc.local service
+And If You Don't Have **rc.loacl** File In Your **/etc** Follow These Steps:
 
-# Manually Create A Systemd Service
-sudo nano /etc/systemd/system/rc-local.service
-# Now Enter The Following Text, Save And Close The File.
+### For Enable Automatically
+`Enable rc.local service`
+
+### Manually Create A Systemd Service
+`sudo nano /etc/systemd/system/rc-local.service`
+
+Now Enter The Following Text, Save And Close The File.
+```
 [Unit]
  Description=/etc/rc.local Compatibility
  ConditionPathExists=/etc/rc.local
@@ -43,18 +45,19 @@ sudo nano /etc/systemd/system/rc-local.service
 
 [Install]
  WantedBy=multi-user.target
+```
+### Create and Edit rc.local file
+`sudo nano /etc/rc.local`
 
-# Create and Edit rc.local file
-sudo nano /etc/rc.local
-# Paste in the following, this ensures that the script is bash executable, all bash scripts shoul have this at the top save and close the file.
-*#!/bin/bash*
+Paste In The Following, Save And Close The File.
+`#!/bin/bash`
 
-sudo chmod +x /etc/rc.local
+### Give Permission And Enabled
+`sudo chmod +x /etc/rc.local`
+Enable the service on boot
 
-#Enable the service on boot
-sudo systemctl enable rc-local
-
-sudo systemctl status rc-local
+`sudo systemctl enable rc-local`
+`sudo systemctl status rc-local`
 
 ```
 ## License
