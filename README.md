@@ -14,7 +14,17 @@ chmod +x PortListener.sh
 # Run The Script
 ./PortListener.sh
 ```
-You Can Put This Script On Startup App To Run After Reboot Too For Do This Check [Setup Section](https://github.com/AshkanWatson/PortListener#setup)
+And For Logs You Should Make Log File Manually
+
+`sudo touch /$HOME/Desktop/script.log`
+
+You Can Customize This File And Location From Code In **SCRIPT_LOG_FILE** Part
+
+This Is For Reboot Log
+
+`sudo touch /var/log/reboot.log`
+
+You Can Put This Script On Startup App To Run After Reboot Too For Do This Check [Setup Section](https://github.com/AshkanWatson/PortListener#setup) This Step Is Not Necessary But Its Good To Be Like That
 ## Setup
 To Make The Script Run Automatically After A Reboot, You Can Follow Steps:
 Adding The Line:
@@ -61,7 +71,6 @@ Enable the service on boot
 `sudo systemctl enable rc-local`
 `sudo systemctl status rc-local`
 
-```
 
 ## License
 
